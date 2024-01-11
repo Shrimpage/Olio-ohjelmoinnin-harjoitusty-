@@ -1,0 +1,28 @@
+﻿Olio-ohjelmointi Harjoitustyö
+Jukka-Pekka Haapaniemi TITE21
+
+Ohjelman rakenne.
+
+MittaimetForm luokka:
+Täällä käytetään muiden luokkien metodeja ja sijoitetaan niistä saadut arvot graafiseen käyttöliittymää.
+Yhdellä napin painalluksella tulisi saada toteutettua sekä mittaukset, että niiden vertailut. 
+
+MittaimetForm Desing:
+Täällä on graafinen asettelu. 
+Jokin selkeä tapa valita yhteenvedon tai yksittäisten sensorien välillä sekä mittausten ottamisen nappi.
+
+
+Sensori luokka:
+Tässä luokassa on yksittäisen sensorin konstruktori. 
+Sensori sisältää ainakin lämpötilan varmaan väliltä -30...30 sekä ajan jolloin mittaus on otettu.
+Sattumanvaraisen mittaustuloksen generointi sijoitetaan myös tähän luokkaan. 
+
+
+
+Sensoriryhma luokka:
+Tässä luokassa on tarkoituksena toteuttaa array sensoreista jota voidaan tarkastella. 
+Täällä lasketaan sensorien lämpötilojen keskiarvo, minimiarvo sekä maksimiarvo.
+
+Program luokka:
+Tänne en usko sijoittavani mitään kummempaa toiminnallisuutta.
+Käytetään vain MittaimetForm luokan "käynnistykseen" komennolla run.

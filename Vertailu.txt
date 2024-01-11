@@ -1,0 +1,32 @@
+﻿Olio-ohjelmointi Harjoitustyö
+Jukka-Pekka Haapaniemi TITE21
+
+Ohjelman rakenne.
+
+MittaimetForm luokka:
+Suurin osa toiminnallisuudesta päätyi tänne. 
+Huomasin kesken toteutuksen että tässä piti olla myös tietojen luku joten toteutin tietojen tallennuksen kahteen tiedostoon ja niiden lukemisen.
+Tänne lisäsin napin jolla poistetaan myös nuo kyseiset tiedostot. 
+Yksi nappi toteuttaa talletuksen ja mittausten oton sekä vertailun.
+Tätä voisi parantaa selkeyttämällä rakennetta ja siirtämällä osan toiminnallisuudesta sensori tai sensoriryhma luokkiin.
+
+MittaimetForm Desing:
+Päädyin alkuperäisten "radio"-buttonien sijaan käyttämään välilehtiä sillä se oli erittäin kätevä omaan tarkoitukseeni.
+Parannettavaa olisi ulkoasussa sekä mahdollisesti jonkin vielä graafisemman esitystavan lisääminen voisi parantaa tätä.
+
+
+Sensori luokka:
+Tänne toteutin yksittäisen sensorin ja sen muuttujat aika sekä lampo. Metodeiksi tuli Mittaus, Luku, Tyhjennys ja Teksti. 
+Aluksi muuttujia oli vain kaksi, mutta kun lisäsin valmiiseen ohjelmaan tiedoston luvun päädyin ratkaisuun jossa muuttujia lisättiin.
+Mittaus metodi suorittaa satunnaisen "lämpöarvon" sekä tietojen tallennuksen samassa.
+Luku metodi lähettää tiedot MittaimetForm luokkaan josta ne sijoitetaan graafiseen käyttöliittymään
+"Tallentaa kansioon bin/debug/" eli sinne missä exe on.
+
+
+Sensoriryhma luokka:
+Tänne tuli array johon toteutettiin metodit sensorien lisäykseen ja vertailuun. 
+Parannettavaa on että käyttäisin tässä tallennettuja arvoja alkuperäisten muuttujien Aika ja Lampo sijaan.
+Ehkä sijoittaisin myös tallennuksen tähän luokkaan ja tallentaisin kaikki 4 sensoria arrayna tai muuna kokoelmana.
+
+Program luokka:
+Application.Run(new MittaimetForm()); oli ainoa mitä täällä muutettiin.
